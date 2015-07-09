@@ -1,1 +1,110 @@
 # PR1_Sedelnikov_lab_rab_1
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+
+
+function task1(){
+var e=0.0;
+var n=prompt('Введите n',0);
+var k=prompt('Введите k',0);
+n=parseInt(n);
+k=parseInt(k);
+for (i=0;i<n;i++)
+{e=e+1/k;
+k++;}
+alert(e);
+
+}
+
+function task2(){
+var e=0.0;
+var n=prompt('Введите n',0);
+var k=prompt('Введите k',0);
+n=parseInt(n);
+k=parseInt(k);
+for (i=0;i<n;i++)
+{e=e+1/Math.pow(k,5);
+k++;}
+alert(e);
+}
+
+
+function task3(){
+var e=0.0;
+var n=prompt('Введите n',0);
+var k=prompt('Введите k',0);
+n=parseInt(n);
+k=parseInt(k);
+for (i=0;i<n;i++)
+{e=e+1/Math.pow(2*k+1,2);
+k++;}
+alert(e);
+}
+
+function task4(){
+var e=0.0;
+var n=prompt('Введите n',0);
+var k=prompt('Введите k',0);
+n=parseInt(n);
+k=parseInt(k);
+for (i=0;i<n;i++)
+{e=e+Math.pow(-1,k)/((2*k+1)*k);
+k++;}
+alert(e);
+}
+
+function task5(){
+var e=0.0;
+var n=prompt('Введите n',0);
+var k=prompt('Введите k',0);
+n=parseInt(n);
+k=parseInt(k);
+for (i=0;i<n;i++)
+{e=e+Math.pow(-1,k+1)/((k+1)*k);
+k++;}
+alert(e);
+}
+
+function task6(){
+var e=0.0;
+var k1=1;
+var n=prompt('Введите n',0);
+var k=prompt('Введите k',0);
+n=parseInt(n);
+k=parseInt(k);
+for (i=0;i<n;i++)
+{k1=k1*k;
+e=e+Math.pow(-1,k)*(k+1)/k1;
+k++;}
+alert(e);
+}
+
+
+function task7(){
+var e=0.0;
+var k1=1;
+var z=0;
+var n=prompt('Введите n',0);
+var k=prompt('Введите k',0);
+n=parseInt(n);
+k=parseInt(k);
+for (i=0;i<n;i++)
+{k1=k1*k;
+z=z+(1/(k+1))
+e=e+k1/z;
+k++;}
+alert(e);
+}
+
+</script>
+<button onclick="task1()">A)</button>
+<button onclick="task2()">Б)</button>
+<button onclick="task3()">В)</button>
+<button onclick="task4()">Г)</button>
+<button onclick="task5()">Д)</button>
+<button onclick="task6()">Е)</button>
+<button onclick="task7()">Ж)</button>
+</body>
+</html>
